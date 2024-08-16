@@ -1,28 +1,9 @@
-# Functions to collect user case data
+def collect_user_data():
+    first_name = input("Enter your first name: ")
+    last_name = input("Enter your last name: ")
+    email = input("Enter your email: ")
+    location = input("Enter your location: ")
 
-def input(
-    prompt: object = "",
-    /
-) -> str:
-    first_name = ""
+    print(f"Hello, {first_name} {last_name}, your email is {email} and you live in {location}")
 
-def input(
-    prompt: object = "",
-    /
-) -> str:
-    last_name = ""
-
-def input(
-    prompt: object = "",
-    /
-) -> str:
-    email = ""
-
-def input(
-    prompt: object = "",
-    /
-) -> str:
-    location = ""
-
-    print(input("Hello, {first_name} {last_name}, your email is {email} and you live in {location} "))
-
+collect_user_data()
